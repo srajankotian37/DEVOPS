@@ -1,0 +1,18 @@
+alias | grep git
+
+
+git dif - see the difference
+
+git reset --hard  - delete the current commit and get back to the previous one
+
+git stash  ,list, drop - save incomplete changes
+
+------BRANCH
+git sitch - swithch branches
+
+git checkout -b  - create and switch branch
+
+
+git kraken - tool to manage and se commits
+
+
