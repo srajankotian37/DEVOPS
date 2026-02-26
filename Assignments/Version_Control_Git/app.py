@@ -24,5 +24,21 @@ def submit():
     collection.insert_one(form_data)
     return form_data
 
+@app.route('/todo')
+def todo_page():
+    return render_template('todo.html')
+
+@app.route('/submittodoitem', methods=['POST'])
+def submit_todo_item():
+    item_name = request.form.get('itemName')
+    item_description = request.form.get('itemDescription')
+    data = {
+        "itemName": item_name,
+        "itemDescription": item_description
+    }
+    collection.insert_one(data)
+    return "Todo item stored successfully!"
+
+
 if __name__ == '__main__':
     app.run(debug=True)
