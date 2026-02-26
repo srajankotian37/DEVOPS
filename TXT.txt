@@ -3,7 +3,7 @@ alias | grep git
 
 git dif - see the difference
 
-git reset --hard  - delete the current commit and get back to the previous one
+git reset --hard - delete the current commit and get back to the previous one
 
 git stash  ,list, drop - save incomplete changes
 
